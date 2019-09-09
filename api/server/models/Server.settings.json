@@ -23,11 +23,11 @@
       "type": "string"
     },
     "password": {
-      "type": "string"
+      "type": "password"
     },
     "servertype": {
       "model": "servertype",
-      "via": "server"
+      "via": "servers"
     }
   }
 }

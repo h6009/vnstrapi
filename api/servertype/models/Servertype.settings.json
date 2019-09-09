@@ -14,8 +14,8 @@
     "type": {
       "type": "string"
     },
-    "server": {
-      "model": "server",
+    "servers": {
+      "collection": "server",
       "via": "servertype"
     }
   }
