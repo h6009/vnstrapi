@@ -23,11 +23,15 @@
       "type": "string"
     },
     "password": {
-      "type": "password"
+      "type": "password",
+      "default": ""
     },
     "servertype": {
       "model": "servertype",
       "via": "servers"
+    },
+    "useprivatekey": {
+      "type": "boolean"
     }
   }
 }
