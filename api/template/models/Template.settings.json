@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "templates",
+  "info": {
+    "name": "template",
+    "description": "Mẫu website"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "link": {
+      "required": true,
+      "type": "string"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "templates",
+      "dominant": true
+    }
+  }
+}

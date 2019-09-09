@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/servertypes",
+      "handler": "Servertype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/servertypes/count",
+      "handler": "Servertype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/servertypes/:id",
+      "handler": "Servertype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/servertypes",
+      "handler": "Servertype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/servertypes/:id",
+      "handler": "Servertype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/servertypes/:id",
+      "handler": "Servertype.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

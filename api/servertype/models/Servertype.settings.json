@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "servertypes",
+  "info": {
+    "name": "servertype",
+    "description": "Loại phần mềm quản lý server"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "server": {
+      "model": "server",
+      "via": "servertype"
+    }
+  }
+}

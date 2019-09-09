@@ -3,11 +3,14 @@
   "collectionName": "servers",
   "info": {
     "name": "server",
-    "description": ""
+    "description": "Danh sách server sở hữu"
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -21,6 +24,10 @@
     },
     "password": {
       "type": "string"
+    },
+    "servertype": {
+      "model": "servertype",
+      "via": "server"
     }
   }
 }
